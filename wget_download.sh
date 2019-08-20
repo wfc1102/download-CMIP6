@@ -74,7 +74,7 @@ for variant_label in ${variant_labels[*]};do
     tim=`date "+%Y%m%d%H%M%S"`
     file="wgets/wget-${variable_id}-${table_id}-${source_id}-${experiment_id}-${variant_label}-${tim}.sh"
     echo "processing ... ${file}"
-    wget -O - "$url" | grep -P "^(?!'(?!${var}_)|'.*\.nc4)" 1>$file
+    wget -O - "$url" | grep -P "^(?!'(?!${variable_id}_)|'.*\.nc4)" 1>$file
     nwords=$(cat "$file" | wc -l)
     [ $nwords -le 1 ] && echo "No files found." && rm "$file"
 done
