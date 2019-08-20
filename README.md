@@ -1,4 +1,6 @@
 # download-CMIP6
+# inspired by https://github.com/lukelbd/cmip5-downloads.git, I improved it to be compatibility with CMIP6.
+
 #----------------------------------------------------------------------------------------------------
 #   The ESGF Search RESTful API:    https://earthsystemcog.org/projects/cog/esgf_search_restful_api
 #   USEAGE:     http://<base_search_URL>/wget?[keyword parameters as (name, value) pairs][facet parameters as (name,value) pairs]
